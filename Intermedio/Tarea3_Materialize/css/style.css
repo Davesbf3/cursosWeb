@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+p{
+  text-align: justify;
+}
+.parallax-container{
+  height: 650px;
+}
+.carousel .carousel-item{
+  width: 400px;
+}
+img.c1{
+  width: 70%;
+}
+img.c2{
+  width: 70%;
+}
+.imgp{
+  height: 250px;
+  width: auto;
+}
+.app {
+    height: auto;
+    width: 150px;
+}
+.logo {
+    height: 60px;
+    width: 130px;
+}

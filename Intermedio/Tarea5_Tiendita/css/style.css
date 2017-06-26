@@ -1,0 +1,26 @@
+ body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}   
+.slogan {
+    text-shadow: 2px 2px 4px #000000;
+}
+.logo {
+    height: 60px;
+    width: 160px;
+}
+.app {
+    height: auto;
+    width: 150px;
+}
+.cyan-txt{
+	color: #4db6ac;
+}
+p.justificado{
+	text-align: justify;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Segundo ejemplo</title>
+</head>
+<body>
+   <!--Primer ejercicio-->
+	<button id="cambiaTexto">Cambia el primer div</button>
+	<div id="primerDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eos eaque aliquid nisi ipsa modi, sed reprehenderit dicta harum est ratione nulla, doloremque dolor atque maxime aliquam, tenetur nam deleniti!</div>
+
+   <!--Segundo ejercicio-->
+	<button id="concatenar">Concateno texto al segundo div</button>
+	<div id="segundodiv">El titular del curso es: </div>
+   
+   <!--Tercer ejercicio-->
+   <button id="creador">Crea texto html</button>
+   <div id="tercerdiv"></div>
+
+   <!--Cuarto ejercicio-->
+   <button id="sumar">Sumar</button>
+   <div id="cuartodiv"></div>
+</body>
+<script>
+	document.getElementById("cambiaTexto").onclick=function(){
+		console.log("Imprimi en consola");
+		alert(document.getElementById("primerDiv").innerHTML);
+	}
+   document.getElementById("concatenar").onclick=function(){
+      document.getElementById("segundodiv").innerHTML=document.getElementById("segundodiv").innerHTML + "Luis Lara (Ludo)"
+   }
+   document.getElementById("creador").onclick=function(){
+      document.getElementById("tercerdiv").innerHTML="<h3>Hola, me creo Javascript</h3>";
+   }
+
+   function suma(a,b){
+      return a+b;
+   }
+   //console.log(suma(10,8));
+
+   function sumarEnDiv(a,b){
+      console.log("hola");
+      document.getElementById("cuartodiv").innerHTML=a+b;
+   }
+   document.getElementById("sumar").onclick=function(){
+   sumarEnDiv(10,8);
+   }
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+Repo local
+git init 			-> inicializa el repositorio
+git add . 			-> Pasando todos los archivos al staging area
+git status 			-> Ver archivos trackeados
+git commit -m ""	-> Registrando cambios en el repo, -m agrega un comentario
+git log				-> Registro de commits
+git checkout hash 	-> Regresas en el tiempo
+git checkout master	-> Regresas a la ultima version
+
+Github
+git remote add origin https://github.com/Davesbf3/PrimerRepositorio.git
+git push -u origin master
+
+Ya configurado
+git pull ***Antes que nada
+git add .
+git commit -m "Mensaje"
+git push -u origin master
+
+git clone url
+
+goo.gl/GjJ6RY

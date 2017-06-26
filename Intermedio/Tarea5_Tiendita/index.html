@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Tiendita</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<style>
+</style>
+<body>
+<main>
+   <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="https://facebook.com">Facebook</a></li>
+    <li><a href="https://twitter.com">Twitter</a></li>
+    <li class="divider"></li>
+    <li><a href="https://instagram.com">Instagram</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="https://facebook.com">Facebook</a></li>
+    <li><a href="https://twitter.com">Twitter</a></li>
+    <li class="divider"></li>
+    <li><a href="https://instagram.com">Instagram</a></li>
+  </ul>
+  <nav class="teal">
+    <div class="nav-wrapper">
+      <a id="logo-container" href class="brand-logo center"><img class="logo" src="img/logo.png" alt=""></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="provedores.html">Provedores</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="provedores.html">Provedores</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/p1.jpg"></div>
+    </div>
+
+    <div class="section white">
+        <h2 class="center slogan cyan-txt">Tiendita</h2>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/p2.jpg"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col m12 s12 center">
+        <h2>¿Quiénes somos?</h2>
+        <p class="justificado">Somos una Empresa de servicios que ofrece el abastecimiento de alimentos (abarrotes, frutas, verduras y carnes), artículos de limpieza y artículos de uso personal. También nos hacemos cargo del pago de servicios como electricidad, agua, gas, teléfono y predial.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m6 s6 center">
+        <h2>Misión</h2>
+        <p class="justificado">Somos una empresa orgullosamente mexicana comprometida con el medioambiente que brinda el mejor servicio de entregas a domicilio. Somos parte de la vida de nuestros clientes para que puedan contar con menos preocupaciones y más tiempo de calidad con su familia.</p>
+      </div>
+      <div class="col m6 s6 center">
+        <h2>Visión</h2>
+        <p class="justificado">Ser una empresa reconocida a nivel nacional, dar un servicio personalizado con el que nuestros clientes puedan disfrutar sus actividades sin preocupaciones. Formar parte de la vida diaria de nuestros clientes siempre brindado la mejor calidad.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m12 s12 center">
+        <h2>¿Cómo funciona?</h2>
+        <p class="justificado">Los clientes ordenan los artículos que quieren a través de nuestra aplicación para teléfonos inteligentes, además se les hace el cobro al momento. Lo único que tienen que hacer es esperar a nuestros repartidores que llegarán a la puerta de su hogar el día asignado con los producto que escogieron.</p>
+      </div>
+    </div>
+  </div>
+
+</main> 
+
+<footer class="page-footer teal">
+ <div class="container">
+   <div class="row">
+     <div class="col m6 s12">
+       <h5 class="white-text">Descarga nuestra app!</h5>
+       <a href="https://play.google.com"><img class="app" src="img/play.png" alt="Play Store"></a>
+       <a href="https://play.google.com"><img class="app" src="img/app.png" alt="Play Store"></a>
+     </div>
+     <div class="col l4 offset-l2 s12">
+       <h5 class="white-text">Contacto</h5>
+       <ul>
+         <li><abbr title="Email"><i class="tiny material-icons">email</i> </abbr><a class="grey-text text-lighten-3" href="mailto:david_a_cruz1@live.com.mx">david_a_cruz1@live.com.mx</a></li>
+         <li><a class="grey-text text-lighten-3" href="https://facebook.com">Facebook</a></li>
+         <li><a class="grey-text text-lighten-3" href="https://twitter.com">Twitter</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+ <div class="footer-copyright">
+   <div class="container center">
+   <small>© 2017 Hecha con <3 en la Facultad de Ingenieria</small>
+   </div>
+ </div>
+</footer>
+         
+
+</body>
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.parallax').parallax();
+    $(".button-collapse").sideNav();
+  });
+</script>
+</html>

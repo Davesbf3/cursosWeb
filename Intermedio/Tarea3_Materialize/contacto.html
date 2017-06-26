@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <main>
+        <!--Navbar-->
+        <!--Dropdown-->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li class="divider"></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+        <!--Dropdown-->
+        <ul id="dropdown2" class="dropdown-content">
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li class="divider"></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+        <nav class="teal">
+          <div class="nav-wrapper">
+            <a id="logo-container" href class="brand-logo center"><img class="logo" src="img/logo.png" alt=""></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>
+        </nav>
+        <!--Termina Navbar-->
+        <br>
+        <div class="container">
+          <div class=row>
+            <div class="col m12">
+              <h5>Dejanos un comentario</h5>
+              <!--Formulario-->
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Nomres(s) " id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Nombre(s)</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="Apellidos" type="text" class="validate">
+                <label for="Apellidos">Apellidos</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Deja un comentario</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--Termina formulario-->
+            </div>
+          </div>
+          
+        </div>
+
+        
+        
+        </main>  
+        <!--Footer-->
+        <footer class="page-footer teal">
+          <div class="container">
+            <div class="row">
+              <div class="col m6">
+                <h5 class="white-text">Descarga nuestra app!</h5>
+                <a href="https://play.google.com"><img class="app" src="img/play.png" alt="Play Store"></a>
+                <a href="https://play.google.com"><img class="app" src="img/app.png" alt="Play Store"></a>
+              </div>
+              <div class="col m6 center">
+                <h5 class="white-text">Contacto</h5>
+                <span class="white-text">contacto@proteco.mx</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container center">
+            <small>© 2017 Copyright Text</small>
+            </div>
+          </div>
+        </footer>
+        <!--Termina Footer-->
+    </body>
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        $('.parallax').parallax();
+        $('.carousel').carousel();
+      });
+      $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+    </script>
+  </html>
