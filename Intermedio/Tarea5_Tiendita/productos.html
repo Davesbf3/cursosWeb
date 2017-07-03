@@ -29,24 +29,37 @@
     <li class="divider"></li>
     <li><a href="https://instagram.com">Instagram</a></li>
   </ul>
-  <nav class="teal">
+  <nav class="amber accent-4
+">
     <div class="nav-wrapper">
-      <a id="logo-container" href class="brand-logo center"><img class="logo" src="img/logo.png"></a>
+      <a id="logo-container" href class="brand-logo center"><img class="responsive-img" src="img/logo.png" alt=""></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
         <li><a href="provedores.html">Provedores</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Redes Sociales<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
         <li><a href="provedores.html">Provedores</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Redes Sociales<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
   </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col m12 s12">
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="row">
@@ -57,7 +70,20 @@
           </div>
           <div class="card-content amber lighten-3">
             <span class="card-title activator teal-text text-darken-4">Doritos<i class="material-icons right">more_vert</i></span>
-            <p><i class="material-icons tiny">shopping_cart</i><a href="#">Agregar al carrito</a></p>
+            <p class="center"><a class="waves-effect waves-light btn amber lighten-1" href="#modal1"><i class="material-icons left">shopping_cart</i>Agregar al carrito</a></p>
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Doritos</h4>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">shopping_cart</i>
+                  <input id="icon_prefix" type="number" class="validate">
+                  <label for="icon_prefix">Numero de productos</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+              </div>
+            </div>
           </div>
           <div class="card-reveal amber lighten-3">
             <span class="card-title teal-text text-darken-4">Doritos<i class="material-icons right">close</i></span>
@@ -72,7 +98,20 @@
           </div>
           <div class="card-content amber lighten-3">
             <span class="card-title activator teal-text text-darken-4">Leche Lala<i class="material-icons right">more_vert</i></span>
-            <p><i class="material-icons tiny">shopping_cart</i><a href="#">Agregar al carrito</a></p>
+            <p class="center"><a class="waves-effect waves-light btn amber lighten-1" href="#modal2"><i class="material-icons left">shopping_cart</i>Agregar al carrito</a></p>
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <h4>Leche Lala</h4>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">shopping_cart</i>
+                  <input id="icon_prefix" type="number" class="validate">
+                  <label for="icon_prefix">Numero de productos</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+              </div>
+            </div>
           </div>
           <div class="card-reveal amber lighten-3">
             <span class="card-title teal-text text-darken-4">Leche Lala<i class="material-icons right">close</i></span>
@@ -89,7 +128,20 @@
           </div>
           <div class="card-content amber lighten-3">
             <span class="card-title activator teal-text text-darken-4">Coca Cola<i class="material-icons right">more_vert</i></span>
-            <p><i class="material-icons tiny">shopping_cart</i><a href="#">Agregar al carrito</a></p>
+            <p class="center"><a class="waves-effect waves-light btn amber lighten-1" href="#modal3"><i class="material-icons left">shopping_cart</i>Agregar al carrito</a></p>
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+                <h4>Coca Cola</h4>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">shopping_cart</i>
+                  <input id="icon_prefix" type="number" class="validate">
+                  <label for="icon_prefix">Numero de productos</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+              </div>
+            </div>
           </div>
           <div class="card-reveal amber lighten-3">
             <span class="card-title teal-text text-darken-4">Coca Cola<i class="material-icons right">close</i></span>
@@ -104,7 +156,20 @@
           </div>
           <div class="card-content amber lighten-3">
             <span class="card-title activator teal-text text-darken-4">Doraditas<i class="material-icons right">more_vert</i></span>
-            <p><i class="material-icons tiny">shopping_cart</i><a href="#">Agregar al carrito</a></p>
+            <p class="center"><a class="waves-effect waves-light btn amber lighten-1" href="#modal4"><i class="material-icons left">shopping_cart</i>Agregar al carrito</a></p>
+            <div id="modal4" class="modal">
+              <div class="modal-content">
+                <h4>Doraditas</h4>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">shopping_cart</i>
+                  <input id="icon_prefix" type="number" class="validate">
+                  <label for="icon_prefix">Numero de productos</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+              </div>
+            </div>
           </div>
           <div class="card-reveal amber lighten-3">
             <span class="card-title teal-text text-darken-4">Doraditas<i class="material-icons right">close</i></span>
@@ -121,7 +186,20 @@
           </div>
           <div class="card-content amber lighten-3">
             <span class="card-title activator teal-text text-darken-4">Paketaxo<i class="material-icons right">more_vert</i></span>
-            <p><i class="material-icons tiny">shopping_cart</i><a href="#">Agregar al carrito</a></p>
+            <p class="center"><a class="waves-effect waves-light btn amber lighten-1" href="#modal5"><i class="material-icons left">shopping_cart</i>Agregar al carrito</a></p>
+            <div id="modal5" class="modal">
+              <div class="modal-content">
+                <h4>Paketaxo</h4>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">shopping_cart</i>
+                  <input id="icon_prefix" type="number" class="validate">
+                  <label for="icon_prefix">Numero de productos</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+              </div>
+            </div>
           </div>
           <div class="card-reveal amber lighten-3">
             <span class="card-title teal-text text-darken-4">Paketaxo<i class="material-icons right">close</i></span>
@@ -136,7 +214,20 @@
           </div>
           <div class="card-content amber lighten-3">
             <span class="card-title activator teal-text text-darken-4">Fabuloso<i class="material-icons right">more_vert</i></span>
-            <p><i class="material-icons tiny">shopping_cart</i><a href="#">Agregar al carrito</a></p>
+            <p class="center"><a class="waves-effect waves-light btn amber lighten-1" href="#modal6"><i class="material-icons left">shopping_cart</i>Agregar al carrito</a></p>
+            <div id="modal6" class="modal">
+              <div class="modal-content">
+                <h4>Fabuloso</h4>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">shopping_cart</i>
+                  <input id="icon_prefix" type="number" class="validate">
+                  <label for="icon_prefix">Numero de productos</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+              </div>
+            </div>
           </div>
           <div class="card-reveal amber lighten-3">
             <span class="card-title teal-text text-darken-4">Fabuloso<i class="material-icons right">close</i></span>
@@ -149,7 +240,7 @@
   
 </main>      
 
-<footer class="page-footer teal">
+<footer class="page-footer amber accent-4">
  <div class="container">
    <div class="row">
      <div class="col m6 s12">
@@ -181,6 +272,12 @@
 <script>
   $(document).ready(function(){
     $(".button-collapse").sideNav();
+    $('.modal').modal();
+    $('.modal2').modal();
+    $('.modal3').modal();
+    $('.modal4').modal();
+    $('.modal5').modal();
+    $('.modal6').modal();
   });
 </script>
 </html>

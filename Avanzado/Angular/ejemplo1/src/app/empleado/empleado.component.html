@@ -1,0 +1,88 @@
+<!--
+<p>{{nombreDelComponente}}</p>
+<hr>
+<ul>
+    <li>{{empleado.nombre}}</li>
+    <li>{{empleado.edad}}</li>
+</ul>
+<ul>
+    <li>{{trabajadores[0].nombre}}</li>
+    <li>{{trabajadores[0].edad}}</li>
+    <li>{{trabajadores[0].puesto}}</li>
+    <li>{{trabajadores[0].bono}}</li>
+</ul>
+<ul>
+    <li>{{trabajadores[1].nombre}}</li>
+    <li>{{trabajadores[1].edad}}</li>
+    <li>{{trabajadores[1].puesto}}</li>
+    <li>{{trabajadores[1].bono}}</li>
+</ul>
+<ul>
+    <li>{{trabajadores[2].nombre}}</li>
+    <li>{{trabajadores[2].edad}}</li>
+    <li>{{trabajadores[2].puesto}}</li>
+    <li>{{trabajadores[2].bono}}</li>
+</ul>
+
+<div *ngIf="empleado.bono==true">
+    <button (click)="cambiarBono(false)">Cambiar bono</button>
+    <ul>
+        <li>{{empleado.nombre}}</li>
+        <li>{{empleado.edad}}</li>
+        <li>{{empleado.puesto}}</li>
+    </ul>
+</div>
+
+<div *ngIf="trabajadores[0].bono==false">
+    <button (click)="cambiarBono(true)">Cambiar bono</button>
+    <ul>
+        <li>{{trabajadores[0].nombre}}</li>
+        <li>{{trabajadores[0].edad}}</li>
+        <li>{{trabajadores[0].puesto}}</li>
+    </ul>
+</div>
+
+<div *ngIf="bandera;else miElse">
+    <h1>Soy el if</h1>
+</div>
+
+<ng-template #miElse>
+    <h1>Soy el else</h1>
+</ng-template>
+
+<div>
+    <ul>
+        <li *ngFor="let trabajador of trabajadores;let i=index">
+            <ul [ngSwitch]=trabajador.colorFav>
+                <li>{{i+1}}</li>
+                <li>{{trabajador.nombre}}</li>
+                <li>{{trabajador.edad}}</li>
+                <li>{{trabajador.puesto}}</li>
+                <li *ngIf="trabajador.bono==true">Con bono!</li>
+                <li *ngIf="trabajador.bono==false">Sin bono!</li>
+                <li *ngSwitchCase="'black'" [ngStyle]="{'background':trabajador.colorFav,'color':'white'}">Mi color favorito es el negro!</li>
+                <li *ngSwitchCase="'pink'" [ngStyle]="{'background':trabajador.colorFav,'color':'white'}">Mi color favorito es el rosa!</li>
+                <li *ngSwitchCase="'blue'" [ngStyle]="{'background':trabajador.colorFav,'color':'white'}">Mi color favorito es el azul!</li>
+                <li *ngSwitchCase="'yellow'" [ngStyle]="{'background':trabajador.colorFav,'color':'black'}">Mi color favorito es el amarillo!</li>
+                <li *ngSwitchCase="'red'" [ngStyle]="{'background':trabajador.colorFav,'color':'white'}">Mi color favorito es el rojo!</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+-->
+
+<h2>TWDB</h2>
+<input type="text" [(ngModel)]="colorSeleccionado">
+<button (click)="getColorSeleccionado()">Imprime color</button>
+
+<p [style.border]="colorSeleccionado == 'red' ? '5px solid black' : '0px solid black'">{{colorSeleccionado}}</p>
+
+<p [ngClass] = "{fondoAzul : colorSeleccionado == 'blue'}">{{colorSeleccionado}}</p>
+
+<div [ngStyle]="{
+    'background': colorSeleccionado,
+    'width': '200px',
+    'height': '200px'
+}">
+    
+</div>

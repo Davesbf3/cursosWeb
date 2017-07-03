@@ -1,0 +1,57 @@
+ body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+main{
+  flex: 1 0 auto;
+}
+.slogan {
+    text-shadow: 2px 2px 4px #000000;
+}
+.logo {
+    height: 60px;
+    width: 160px;
+}
+.app {
+    height: auto;
+    width: 150px;
+}
+.cyan-txt{
+	color: #4db6ac;
+}
+p.justificado{
+	text-align: justify;
+}
+.provedor{
+  height: 250px;
+  width: 250px;
+}
+.parallax-container {
+  height: 700px;
+}
+#t1{
+  font-family: 'Petit Formal Script', cursive;
+}
+.carousel{
+  margin-bottom: 50px;
+}
+.carousel .carousel-item {
+  width: 500px;
+}
+.canasta{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.animacion{
+  background-color: white;
+  animation-name: example;
+  animation-duration: 8s;
+}
+
+@keyframes example {
+    0%   {background-color: white;}
+    33%  {background-color: teal;}
+    66%  {background-color: white;}
+}
